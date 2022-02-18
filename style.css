@@ -1,0 +1,163 @@
+ .container {
+   max-width: 960px;
+   width: 100%;
+   margin: 0 auto;
+ }
+
+ header,
+ footer {
+   text-align: center;
+   color: #333333;
+ }
+
+ footer {
+   font-style: italic;
+   background: #efefef
+ }
+ 
+main {
+   background: #efefef;
+   display: flex;
+   border-top: 5px solid #ccc;
+ }
+
+
+ .btn-container {
+   width: 20%;
+   text-align: center;
+   
+ }
+
+ .btn-container button {
+   background: #72c3dc;
+   border: 1px solid #2b8ead;
+   border-radius: 5px;
+   box-shadow: 0px 5px 0px #2b8ead;
+   color: #ffffff;
+   padding: 15px 0px;
+   margin-left: 35px;
+   margin-top: 20px;
+   text-shadow: 1px 1px 1px #2b8ead;
+   width:100%;
+   position: relative;
+ }
+
+  button:active {
+   top: 5px;
+ }
+
+ ul {
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 70%;
+   text-align: center;
+   width: 100%;
+   margin-top: 0;
+   padding-inline-start: 0;
+  }
+
+
+ ul li {
+   list-style: none;
+   padding: 45px 0;
+   font-size: 4vw;
+   color: #ffffff;
+   width: 33.33%;
+ }
+
+ [card-id='1'],
+ [card-id='8'] {
+   background: #6f98a8;
+ }
+
+ [card-id='2'],
+ [card-id='4'] {
+   background: #2b8ead;
+ }
+
+ [card-id='3'],
+ [card-id='5'],
+ [card-id='9'] {
+   background: #2f454e;
+ }
+
+ [card-id='6'],
+ [card-id='7'] {
+   background: #bfbfbf;
+ }
+
+ @media screen and (max-width: 500px) {   /*max-width set to 500px has i was not able verify on my laptop for lower values even using inspect*/
+  
+header {
+     background: #333;
+     color: #fff;
+     padding: 10px 0;
+   }
+
+   main {
+     flex-direction: column-reverse;
+     background: transparent;
+   }
+
+   ul {
+     flex-direction: column;
+
+   }
+
+   ul {
+     max-width: 90%;
+     margin: auto;
+     background: transparent;
+   }
+
+   ul li {
+     width: 100%;
+     max-width: 100%;
+     margin-bottom: 5px;
+     color: #333;
+     padding: 15px 0;
+   }
+
+   .btn-container {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin: 15px 0 20px;
+   }
+
+   .btn-container button {
+     margin: 0;
+     max-width: 35%;
+     font-size: 14px;
+     margin-left: 5px;
+   }
+
+   [card-id='1'],
+   [card-id='8'] {
+     background: #efefef;
+     border-left: 5px solid #6f98a8;
+   }
+
+   [card-id='2'],
+   [card-id='4'] {
+     border-left: 5px solid #2b8ead;
+     background: #efefef;
+   }
+
+   [card-id='3'],
+   [card-id='5'],
+   [card-id='9'] {
+     border-left: 5px solid #2f454e;
+     background: #efefef;
+   }
+
+   [card-id='6'],
+   [card-id='7'] {
+     border-left: 5px solid #bfbfbf;
+     background: #efefef;
+   }
+
+   footer {
+     background: transparent;
+   }
+ }
